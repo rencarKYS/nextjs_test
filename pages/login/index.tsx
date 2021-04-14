@@ -1,11 +1,12 @@
 import React, { ReactElement } from 'react';
+import withHead from '@/components/hoc/withHead';
 import styles from './Login.module.scss';
 
 interface Props {
   
 }
 
-export default function Login({}: Props): ReactElement {
+function Login({}: Props): ReactElement {
   return (
     <div className="container mx-auto">
       <form className={styles.login_area}>
@@ -16,3 +17,6 @@ export default function Login({}: Props): ReactElement {
     </div>
   )
 }
+
+
+export default withHead(Login, '로그인', '로그인 페이지입니다.');
