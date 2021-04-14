@@ -7,7 +7,7 @@ interface Props {
 
 export default function Header({}: Props): ReactElement {
   return (
-    <div>
+    <div className="nav_area grid grid-cols-3 gap-2 place-items-stretch">
       <Link href="/">Home</Link>
       <Link href="/login">login</Link>
       <Link href="/reservation">reservation</Link>

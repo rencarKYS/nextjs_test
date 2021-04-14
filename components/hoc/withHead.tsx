@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const withHead = (Component:any, title:string, description: string) => {
   
-	const C = (props: JSX.IntrinsicAttributes) => {
+	const HocComponent = (props: JSX.IntrinsicAttributes) => {
     
 		return (
 
@@ -12,14 +12,13 @@ const withHead = (Component:any, title:string, description: string) => {
 					<title>{title}</title>
 					<meta name="description" content={description} />
 				</Head>
-
 				<Component {...props}/>
 			</>
 
 		);
 	};
 
-	return C;
+	return HocComponent;
 
 };
 
