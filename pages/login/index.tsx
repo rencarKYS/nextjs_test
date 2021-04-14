@@ -7,7 +7,7 @@ interface Props {
 
 export default function Login({}: Props): ReactElement {
   return (
-    <div>
+    <div className="container mx-auto">
       <form className={styles.login_area}>
         <input type="text" name="id" />
         <input type="password" name="password" />
