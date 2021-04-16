@@ -11,7 +11,7 @@ class MyDocument extends Document {
     return (
       <Html lang="ko">
         <Head/>
-        <body>
+        <body className="bg-gradient-to-r from-green-400 to-blue-500">
           <Main />
           <NextScript />
         </body>
